@@ -18,7 +18,7 @@ RUN yarn install
 
 RUN yarn add react-scripts
 
-RUN yarn start
+RUN yarn build
 
 # Expose PORT 3000 on our virtual machine so we can run our server
 EXPOSE 3000
