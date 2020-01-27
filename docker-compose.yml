@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  frontend:
+    container_name: student_management_system_frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+    - NODE_ENV=development
+    command: yarn start
+    ports:
+    - 3000:3000
+    volumes:
+    - '.:/student_management_system_frontend'
